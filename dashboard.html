@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        <button id="logoutBtn" class="btn-secondary">Logout</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <header class="page-header">
+            <h1 id="greeting">Hello, User!</h1>
+            <p>Here is an overview of your latest projects.</p>
+        </header>
+
+        <!-- Interactive Section: Add Project -->
+        <section class="control-panel">
+            <input type="text" id="newProjectTitle" placeholder="Enter new project name...">
+            <button id="addProjectBtn" class="btn-primary">+ Add Project</button>
+        </section>
+
+        <!-- Dynamic Grid -->
+        <section class="projects-grid" id="projectsGrid">
+            <!-- Static Example Card -->
+            <div class="card">
+                <div class="card-header color-1"></div>
+                <div class="card-body">
+                    <h3>E-Commerce Site</h3>
+                    <p>A fully responsive shop built with React.</p>
+                    <button class="btn-text">View Details →</button>
+                </div>
+            </div>
+            
+            <!-- Static Example Card -->
+            <div class="card">
+                <div class="card-header color-2"></div>
+                <div class="card-body">
+                    <h3>Task Manager App</h3>
+                    <p>Productivity tool using local storage.</p>
+                    <button class="btn-text">View Details →</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
